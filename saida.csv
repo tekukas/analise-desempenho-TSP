@@ -1,0 +1,119 @@
+Arquivo;Algorigtmo;Tempo;Custo;Aproximacao;Memoria
+eil51;Christofides;0.01163;486.82;1.14;57.71
+eil51;Twice around the tree;0.00258;640.9;1.5;57.71
+berlin52;Christofides;0.0104;8594.03;1.14;58.71
+berlin52;Twice around the tree;0.00234;10116.01;1.34;58.71
+st70;Christofides;0.02673;759.16;1.12;59.71
+st70;Twice around the tree;0.00452;873.35;1.29;59.71
+eil76;Christofides;0.03796;623.06;1.16;60.58
+eil76;Twice around the tree;0.00552;707.15;1.31;60.71
+pr76;Christofides;0.01739;116683.53;1.08;61.33
+pr76;Twice around the tree;0.00511;145338.11;1.34;61.33
+rat99;Christofides;0.04238;1367.43;1.13;61.71
+rat99;Twice around the tree;0.0084;1723.23;1.42;61.71
+kroA100;Christofides;0.0548;23292.98;1.09;62.71
+kroA100;Twice around the tree;0.00996;27211.68;1.28;62.71
+kroB100;Christofides;0.04016;24009.19;1.08;64.46
+kroB100;Twice around the tree;0.01038;25881.2;1.17;64.46
+kroC100;Christofides;0.05;23469.13;1.13;64.46
+kroC100;Twice around the tree;0.00935;27966.54;1.35;64.46
+kroD100;Christofides;0.05135;23587.75;1.11;64.46
+kroD100;Twice around the tree;0.01117;27113.3;1.27;64.46
+kroE100;Christofides;0.07159;23782.61;1.08;64.46
+kroE100;Twice around the tree;0.01407;30507.42;1.38;64.46
+rd100;Christofides;0.08812;8905.49;1.13;64.46
+rd100;Twice around the tree;0.01107;10791.66;1.36;64.46
+eil101;Christofides;0.11534;723.0;1.15;64.46
+eil101;Twice around the tree;0.0091;830.54;1.32;64.46
+lin105;Christofides;0.04935;16323.68;1.14;64.46
+lin105;Twice around the tree;0.00995;19498.41;1.36;64.46
+pr107;Christofides;0.0378;47894.18;1.08;64.46
+pr107;Twice around the tree;0.01106;54238.04;1.22;64.46
+pr124;Christofides;0.03327;64437.7;1.09;64.46
+pr124;Twice around the tree;0.01364;74140.96;1.26;64.46
+bier127;Christofides;0.12934;132456.25;1.12;64.46
+bier127;Twice around the tree;0.01416;158637.61;1.34;64.46
+ch130;Christofides;0.11016;6752.28;1.11;65.83
+ch130;Twice around the tree;0.01513;8128.76;1.33;65.83
+pr136;Christofides;0.03207;103771.91;1.07;66.46
+pr136;Twice around the tree;0.01673;151913.74;1.57;66.46
+pr144;Christofides;0.03466;70405.28;1.2;66.46
+pr144;Twice around the tree;0.01793;80596.32;1.38;66.46
+ch150;Christofides;0.08493;7112.04;1.09;66.46
+ch150;Twice around the tree;0.02114;8333.47;1.28;66.46
+kroA150;Christofides;0.18166;29688.32;1.12;66.46
+kroA150;Twice around the tree;0.02404;35122.57;1.32;66.46
+kroB150;Christofides;0.22565;30054.39;1.15;66.46
+kroB150;Twice around the tree;0.02287;36154.73;1.38;66.46
+pr152;Christofides;0.03535;79314.35;1.08;66.46
+pr152;Twice around the tree;0.0253;87998.69;1.19;66.46
+u159;Christofides;0.1222;47581.72;1.13;66.71
+u159;Twice around the tree;0.0257;57787.97;1.37;66.71
+rat195;Christofides;0.23463;2648.1;1.14;69.46
+rat195;Twice around the tree;0.04631;3317.72;1.43;69.46
+d198;Christofides;0.26188;17316.37;1.1;72.83
+d198;Twice around the tree;0.10166;19218.43;1.22;72.83
+kroA200;Christofides;0.47171;33602.86;1.14;72.83
+kroA200;Twice around the tree;0.04501;40030.87;1.36;72.83
+kroB200;Christofides;0.31;33118.12;1.13;72.96
+kroB200;Twice around the tree;0.04512;40710.96;1.38;72.96
+ts225;Christofides;0.09811;133282.17;1.05;73.39
+ts225;Twice around the tree;0.04551;188009.7;1.48;73.39
+tsp225;Christofides;0.32686;4376.0;1.12;73.89
+tsp225;Twice around the tree;0.07885;5115.93;1.31;73.89
+pr226;Christofides;0.20592;92425.75;1.15;75.96
+pr226;Twice around the tree;0.04453;116692.15;1.45;75.96
+gil262;Christofides;0.61082;2695.15;1.13;78.68
+gil262;Twice around the tree;0.10962;3358.15;1.41;78.68
+pr264;Christofides;0.24806;54663.6;1.11;79.8
+pr264;Twice around the tree;0.06097;66466.84;1.35;79.8
+a280;Christofides;0.49078;2975.11;1.15;80.8
+a280;Twice around the tree;0.06785;3629.72;1.41;80.8
+pr299;Christofides;0.66913;52968.22;1.1;84.43
+pr299;Twice around the tree;0.10162;64646.03;1.34;84.43
+lin318;Christofides;0.95452;47259.76;1.12;86.27
+lin318;Twice around the tree;0.14632;58145.44;1.38;86.26
+linhp318;Christofides;0.96818;47259.76;1.14;89.05
+linhp318;Twice around the tree;0.14725;58145.44;1.41;89.05
+rd400;Christofides;2.7286;17551.75;1.15;99.21
+rd400;Twice around the tree;0.19965;20250.38;1.33;99.71
+fl417;Christofides;1.05988;13424.73;1.13;109.25
+fl417;Twice around the tree;0.21579;16297.17;1.37;109.25
+pr439;Christofides;1.0831;119532.04;1.11;108.1
+pr439;Twice around the tree;0.24826;144624.16;1.35;107.23
+pcb442;Christofides;2.01342;54876.77;1.08;116.42
+pcb442;Twice around the tree;0.2409;69364.9;1.37;116.42
+d493;Christofides;3.27466;38393.64;1.1;112.56
+d493;Twice around the tree;0.31276;45427.09;1.3;112.56
+u574;Christofides;5.33674;41337.61;1.12;139.41
+u574;Twice around the tree;0.44191;49083.15;1.33;139.41
+rat575;Christofides;6.10215;7802.75;1.15;129.25
+rat575;Twice around the tree;0.45739;9438.93;1.39;129.25
+p654;Christofides;1.17124;39244.71;1.13;149.51
+p654;Twice around the tree;0.56927;49731.9;1.44;149.5
+d657;Christofides;8.05239;54738.3;1.12;149.91
+d657;Twice around the tree;0.57176;65730.19;1.34;149.91
+u724;Christofides;10.35516;47954.68;1.14;177.43
+u724;Twice around the tree;0.80935;57779.67;1.38;179.29
+rat783;Christofides;15.79077;10102.87;1.15;201.66
+rat783;Twice around the tree;0.99739;12054.45;1.37;203.37
+pr1002;Christofides;24.50202;286233.1;1.1;264.16
+pr1002;Twice around the tree;1.67957;342244.46;1.32;269.34
+u1060;Christofides;32.66958;249108.58;1.11;298.96
+u1060;Twice around the tree;2.06638;302914.87;1.35;298.47
+vm1084;Christofides;17.04241;260833.06;1.09;308.68
+vm1084;Twice around the tree;2.10421;315268.35;1.32;309.11
+pcb1173;Christofides;30.65686;63392.44;1.11;345.97
+pcb1173;Twice around the tree;2.50928;80694.89;1.42;345.41
+d1291;Christofides;9.39402;57930.37;1.14;396.42
+d1291;Twice around the tree;3.36279;74658.3;1.47;395.94
+rl1304;Christofides;9.58024;278319.19;1.1;401.81
+rl1304;Twice around the tree;3.44042;347782.57;1.37;401.73
+rl1323;Christofides;9.61254;298261.72;1.1;414.82
+rl1323;Twice around the tree;3.48515;380421.59;1.41;414.95
+nrw1379;Christofides;107.8098;63845.07;1.13;489.6
+nrw1379;Twice around the tree;3.71755;79156.27;1.4;489.09
+fl1400;Christofides;101.48827;22834.35;1.13;545.46
+fl1400;Twice around the tree;4.01168;27915.52;1.39;543.58
+u1432;Christofides;35.73898;171640.92;1.12;562.72
+u1432;Twice around the tree;4.33451;214430.78;1.4;562.25
