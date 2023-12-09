@@ -9,7 +9,7 @@ import signal
 def main():
 	testaTodos = True
 	numTestes = 1
-	arquivoTestes = 'tp2_datasets.txt'
+	arquivoTestes = 'lista-datasets.txt'
 	arquivoSaida = 'saida.csv'
 
 	with open(arquivoTestes, 'r') as arquivo:
@@ -18,7 +18,7 @@ def main():
 	linhas = linhas[1:] # Remove a primeira linha (cabeçalho)
 
 	with open(arquivoSaida, 'w') as saida: # abre o arquivo de saida (se nao existir, cria)
-		saida.write('Arquivo;Algorigtmo;Tempo;Custo;Aproximacao;Memoria\n')
+		saida.write('Arquivo;Algoritmo;Tempo;Custo;Aproximacao;Memoria\n')
 
 	if testaTodos:
 		numTestes = len(linhas)

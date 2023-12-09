@@ -1,4 +1,4 @@
-Arquivo;Algorigtmo;Tempo;Custo;Aproximacao;Memoria
+Arquivo;Algoritmo;Tempo;Custo;Aproximacao;Memoria
 eil51;Christofides;0.01163;486.82;1.14;57.71
 eil51;Twice around the tree;0.00258;640.9;1.5;57.71
 berlin52;Christofides;0.0104;8594.03;1.14;58.71
