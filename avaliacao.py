@@ -38,9 +38,14 @@ def main():
 			saida.write(linha[0] + ';')
 			saida.write('Christofides;')
 
+		signal.signal(signal.SIGALRM, lambda x, y: exit())
+		signal.alarm(30*60)
+
 		inicioCristo = time.time()
 		custoCristo = christofides(grafo)
 		fimCristo = time.time()
+
+		signal.alarm(0)
 
 		memTAT, distTAT = memory_usage(partial(christofides, grafo), retval=True, interval=1.0, max_usage=True)
 		
@@ -54,9 +59,14 @@ def main():
 			saida.write(linha[0] + ';')
 			saida.write('Twice around the tree;')	
 		
+		signal.signal(signal.SIGALRM, lambda x, y: exit())
+		signal.alarm(30*60)
+		
 		inicioTwice = time.time()
 		custoTwice = twice(grafo)
 		fimTwice = time.time()
+		
+		signal.alarm(0)
 
 		memTAT, distTAT = memory_usage(partial(twice, grafo), retval=True, interval=1.0, max_usage=True)
 		
@@ -70,7 +80,6 @@ def main():
 if __name__ == '__main__':
 	freeze_support()
 	# seta um timeout de 30 minutos para o programa
-	signal.signal(signal.SIGALRM, lambda x, y: exit())
-	signal.alarm(30*60)
+
 	main()
-	signal.alarm(0)
+	
