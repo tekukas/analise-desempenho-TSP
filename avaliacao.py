@@ -38,11 +38,19 @@ def main():
 			saida.write(linha[0] + ';')
 			saida.write('Christofides;')
 
-		signal.signal(signal.SIGALRM, lambda x, y: exit())
+		# inicia o teste com Christofides
+		def timeout_handler(signum, frame):
+			raise TimeoutError(f'Erro: Tempo limite excedido para o dataset {linha[0]}')
+
+		signal.signal(signal.SIGALRM, timeout_handler)
 		signal.alarm(30*60)
 
 		inicioCristo = time.time()
-		custoCristo = christofides(grafo)
+		try:
+			custoCristo = christofides(grafo)
+		except TimeoutError:
+			print(f'Erro: Tempo limite excedido para o christofides do dataset {linha[0]}')
+
 		fimCristo = time.time()
 
 		signal.alarm(0)
@@ -58,12 +66,17 @@ def main():
 
 			saida.write(linha[0] + ';')
 			saida.write('Twice around the tree;')	
-		
-		signal.signal(signal.SIGALRM, lambda x, y: exit())
+
+		signal.signal(signal.SIGALRM, timeout_handler)
 		signal.alarm(30*60)
 		
+		# inicia o teste com Twice around the tree
 		inicioTwice = time.time()
-		custoTwice = twice(grafo)
+		try:
+			custoTwice = twice(grafo)
+		except TimeoutError:
+			print(f'Erro: Tempo limite excedido para o twice do dataset {linha[0]}')
+
 		fimTwice = time.time()
 		
 		signal.alarm(0)
@@ -79,7 +92,5 @@ def main():
 
 if __name__ == '__main__':
 	freeze_support()
-	# seta um timeout de 30 minutos para o programa
-
 	main()
 	
