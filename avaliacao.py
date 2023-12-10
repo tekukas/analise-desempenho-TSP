@@ -5,6 +5,7 @@ from memory_profiler import memory_usage
 from functools import partial
 from multiprocessing import freeze_support
 import signal
+import os
 
 def main():
 	testaTodos = True
@@ -17,8 +18,9 @@ def main():
 
 	linhas = linhas[1:] # Remove a primeira linha (cabeçalho)
 
-	with open(arquivoSaida, 'w') as saida: # abre o arquivo de saida (se nao existir, cria)
-		saida.write('Arquivo;Algoritmo;Tempo;Custo;Aproximacao;Memoria\n')
+	if not os.path.exists(arquivoSaida):
+		with open(arquivoSaida, 'w') as saida: # abre o arquivo de saida (se nao existir, cria)
+			saida.write('Arquivo;Algoritmo;Tempo;Custo;Aproximacao;Memoria\n')
 
 	if testaTodos:
 		numTestes = len(linhas)
@@ -55,13 +57,13 @@ def main():
 
 		signal.alarm(0)
 
-		memTAT, distTAT = memory_usage(partial(christofides, grafo), retval=True, interval=1.0, max_usage=True)
+		memoria = memory_usage(partial(christofides, grafo), interval=1.0, max_usage=True)
 		
 		with open(arquivoSaida, 'a') as saida:
 			saida.write('{};'.format(round(fimCristo-inicioCristo, 5))) # tempo
 			saida.write('{};'.format(round(custoCristo, 2))) # custo
 			saida.write('{};'.format(round(custoCristo/float(linha[2]), 2))) # aproximacao
-			saida.write('{}'.format(round(memTAT, 2))) # memoria
+			saida.write('{}'.format(round(memoria, 2))) # memoria
 			saida.write('\n')
 
 			saida.write(linha[0] + ';')
@@ -81,14 +83,14 @@ def main():
 		
 		signal.alarm(0)
 
-		memTAT, distTAT = memory_usage(partial(twice, grafo), retval=True, interval=1.0, max_usage=True)
+		memoria = memory_usage(partial(twice, grafo), interval=1.0, max_usage=True)
 		
 		with open(arquivoSaida, 'a') as saida:
 			saida.write('{};'.format(round(fimTwice-inicioTwice, 5))) # tempo
 			saida.write('{};'.format(round(custoTwice, 2))) # custo
 			saida.write('{};'.format(round(custoTwice/float(linha[2]), 2))) # aproximacao
-			saida.write('{}'.format(round(memTAT, 2))) # memoria
-			saida.write('\n')
+			saida.write('{}'.format(round(memoria, 2))) # memoria
+			saida.write(';\n')
 
 if __name__ == '__main__':
 	freeze_support()
