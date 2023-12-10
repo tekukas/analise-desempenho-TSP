@@ -8,10 +8,10 @@ import signal
 import os
 
 def main():
-	testaTodos = True
+	testaTodos = False
 	numTestes = 1
-	arquivoTestes = 'lista-datasets.txt'
-	arquivoSaida = 'saida.csv'
+	arquivoTestes = '../lista-datasets.txt'
+	arquivoSaida = '../saida.csv'
 
 	with open(arquivoTestes, 'r') as arquivo:
 		linhas = arquivo.readlines()
@@ -28,7 +28,7 @@ def main():
 	for linha in linhas[:numTestes]:
 		
 		linha = linha.split() # arquivo, dimensao, custo otimo
-		arquivo = 'datasets/' + linha[0] + '.tsp'
+		arquivo = '../datasets/' + linha[0] + '.tsp'
 
 		try:
 			grafo = geraGrafo(arquivo)
