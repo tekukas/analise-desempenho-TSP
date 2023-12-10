@@ -1,7 +1,4 @@
-
-.vscode/settings.json
+.vscode/*
 analise.ipynb
-__pycache__/primitivas.cpython-310.pyc
-__pycache__/aproximativos.cpython-310.pyc
-.vscode/tasks.json
-.vscode/launch.json
+__pycache__/*
+algoritmos/__pycache__/*
