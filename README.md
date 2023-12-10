@@ -3,7 +3,7 @@ Este artigo avalia o desempenho de três implementações de algoritmos para com
 
 Os algoritmos aproximativos são "Twice around the tree" e "Christofides", e o código está presente no arquivo [aproximativos.py](algoritmos/aproximativos.py).
 
-O algoritmo Branch and Bound está presente no arquivo [bnb.cc](algoritmos/bnb.cc)
+O algoritmo Branch and Bound está presente no arquivo [bnb.cc](algoritmos/bnb.cc). Para execução basta utilizar ```g++ bnb.cc -o bnb``` e ```./bnb```
 
 O arquivo [primitivas.py](algoritmos/primitivas.py) contém funções auxiliares para os algoritmos, como criação de grafos a partir dos arquivos ```.tsp```.
 
